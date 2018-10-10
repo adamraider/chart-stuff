@@ -23,7 +23,7 @@ const TYPES = {
 const COLORS = ['#8cc679', '#c27af7', '#4ea3e4', '#dd9666', '#e8587c'];
 
 const datasets = Object.keys(TYPES).map((type, index) => ({
-  label: type,
+  label: type.replace('_', ' '),
   data: APPS.map(key => data[key][type].mean / 1000),
   backgroundColor: COLORS[index]
 }));
