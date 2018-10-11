@@ -1,56 +1,44 @@
 export default Object.freeze({
   quincy_building: {
-    unthrottle: { mean: 1700.1000000163913, median: 1700.1000000163913 },
-    throttled_everything: {
-      mean: 25521.10000012908,
-      median: 25521.10000012908
-    },
-    throttle_cpu: { mean: 7658.5500000510365, median: 7658.5500000510365 },
-    throttle_bw: { mean: 15009.94999986142, median: 15009.94999986142 },
-    throttle_latency: { mean: 12414.55000010319, median: 12414.55000010319 }
+    unthrottle: { mean: 1654.7, median: 1664.4 },
+    throttled_everything: { mean: 23937.53, median: 22571.6 },
+    throttle_cpu: { mean: 7408.39, median: 7419.55 },
+    throttle_bw: { mean: 12081.94, median: 11511.25 },
+    throttle_latency: { mean: 12911.07, median: 12876.0 }
   },
   quincy_empty: {
-    unthrottle: { mean: 958.8000000221655, median: 958.8000000221655 },
-    throttled_everything: {
-      mean: 12009.749999968335,
-      median: 12009.749999968335
-    },
-    throttle_cpu: { mean: 4559.449999942444, median: 4559.449999942444 },
-    throttle_bw: { mean: 5234.249999979511, median: 5234.249999979511 },
-    throttle_latency: { mean: 6836.250000051223, median: 6836.250000051223 }
+    unthrottle: { mean: 922.07, median: 927.95 },
+    throttled_everything: { mean: 12031.13, median: 11970.8 },
+    throttle_cpu: { mean: 4093.1, median: 4107.65 },
+    throttle_bw: { mean: 14906.2, median: 14921.05 },
+    throttle_latency: { mean: 6808.14, median: 6829.0 }
   },
   next_building: {
-    unthrottle: { mean: 544.9500000104308, median: 544.9500000104308 },
-    throttled_everything: {
-      mean: 8395.850000088103,
-      median: 8395.850000088103
-    },
-    throttle_cpu: { mean: 1094.950000056997, median: 1094.950000056997 },
-    throttle_bw: { mean: 3072.2999999998137, median: 3072.2999999998137 },
-    throttle_latency: { mean: 5181.600000010803, median: 5181.600000010803 }
+    unthrottle: { mean: 310.56, median: 308.2 },
+    throttled_everything: { mean: 8656.03, median: 8537.75 },
+    throttle_cpu: { mean: 1014.74, median: 1014.05 },
+    throttle_bw: { mean: 2245.87, median: 2252.85 },
+    throttle_latency: { mean: 4845.23, median: 4840.4 }
   },
   next_empty: {
-    unthrottle: { mean: 26.0, median: 26.0 },
-    throttled_everything: {
-      mean: 3794.9499998940155,
-      median: 3794.9499998940155
-    },
-    throttle_cpu: { mean: 443.59999999869615, median: 443.59999999869615 },
-    throttle_bw: { mean: 35.5, median: 35.5 },
-    throttle_latency: { mean: 1024.0, median: 1024.0 }
+    unthrottle: { mean: 17.67, median: 18.0 },
+    throttled_everything: { mean: 4105.64, median: 4094.45 },
+    throttle_cpu: { mean: 401.82, median: 400.8 },
+    throttle_bw: { mean: 36.0, median: 36.0 },
+    throttle_latency: { mean: 1026.5, median: 1026.5 }
   },
   vanilla_building: {
-    unthrottle: { mean: 266.0, median: 266.0 },
-    throttled_everything: { mean: 3042.5, median: 3042.5 },
-    throttle_cpu: { mean: 391.9499999610707, median: 391.9499999610707 },
-    throttle_bw: { mean: 197.0, median: 197.0 },
-    throttle_latency: { mean: 2928.5, median: 2928.5 }
+    unthrottle: { mean: 61.44, median: 49.0 },
+    throttled_everything: { mean: 3193.11, median: 3173.0 },
+    throttle_cpu: { mean: 368.79, median: 369.6 },
+    throttle_bw: { mean: 200.22, median: 200.5 },
+    throttle_latency: { mean: 3051.56, median: 3060.5 }
   },
   vanilla_empty: {
-    unthrottle: { mean: 21.0, median: 21.0 },
-    throttled_everything: { mean: 1081.5, median: 1081.5 },
-    throttle_cpu: { mean: 54.0, median: 54.0 },
+    unthrottle: { mean: 21.44, median: 21.0 },
+    throttled_everything: { mean: 1081.5, median: 1081.0 },
+    throttle_cpu: { mean: 41.11, median: 41.0 },
     throttle_bw: { mean: 58.0, median: 58.0 },
-    throttle_latency: { mean: 1024.0, median: 1024.0 }
+    throttle_latency: { mean: 1028.78, median: 1028.5 }
   }
 });
