@@ -41,20 +41,18 @@ function parseData(data) {
     _.uniq(
       _.reduce(apps, (memo, app) => memo.concat(Object.keys(data[app])), [])
     ),
-    type => -_.get(data, `[${apps[0]}][${type}].mean`, 0)
+    type => -_.get(data, `[${apps[1]}][${type}].mean`, 0)
   );
   const labels = apps.map(key => key.replace('_', ' '));
   const datasets = types.map((type, index) => {
     return {
       label: _.get(TYPES_MAP, `${type}.label`, type),
-      data: apps
-        .map(
-          key =>
-            data[key][type]
-              ? Math.round((data[key][type].mean / 1000) * 100) / 100
-              : null
-        )
-        .filter(Boolean),
+      data: apps.map(
+        app =>
+          data[app][type]
+            ? Math.round((data[app][type].mean / 1000) * 100) / 100
+            : null
+      ),
       backgroundColor: color(COLORS[index]).setAlpha(0.5),
       hoverBackgroundColor: color(COLORS[index]).setAlpha(0.5),
       borderColor: color(COLORS[index]),
@@ -101,10 +99,6 @@ class App extends Component {
         datasets
       },
       options: {
-        title: {
-          display: true,
-          text: 'Time to Interactive (TTI) in Seconds'
-        },
         scales: {
           yAxes: [
             {
